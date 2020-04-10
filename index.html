@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Calendar</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body onload="calUpdate()">
+        <header class="head">
+            <h1>Interactive Calendar</h1>
+        </header>
+        <div id="myclock" class="clock"></div>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="months">
+
+                    <div class="prevMonth" onclick="navigate('prev')">
+                        <span>&#10094</span>
+                    </div>
+                    <div>
+                        <h2 id="month">April</h2>
+                        <p id="dateStr">Sat,Apr 04 2020</p>
+                    </div>
+                    <div class="nextMonth" onclick="navigate('next')">
+                        <span>&#10095</span>
+                    </div>
+
+                </div>
+                <div class="weeks">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+             
+                </div>
+
+            </div>
+        </div>
+            <div class="feed">
+                <label for="feedback">Give you feedback here:</label><br>
+                <input type="text" placeholder="Type something..." name="feedback"  onfocus="focusonInput()" onblur="focusoffInput()"/>
+                <div class="submit">
+                    <input type="submit" value="submit" name="submit" onclick="feedSub()" />
+                </div>
+            </div>
+            
+
+      
+        <script type="text/javascript" src="javascript.js" / ></script>
+
+            
+    </body>
+</html>
