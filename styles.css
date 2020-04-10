@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    font-family:'Segoe UI',sans-serif, Helvetica, Arial;
+    font-weight:normal;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+}
+
+.wrapper{
+    display:flex;
+    height:100vh;
+    width:100vw;
+    background-image:url(C:/Users/dell/Downloads/bgimg.jpg);
+}
+
+.container{
+    margin:auto;
+    /* height:400px;*/
+    width:500px; 
+    background-color:#fff;
+    border:2px solid rgb(241, 86, 14);
+    box-shadow:2px 2px 5px 2px rgb(125, 187, 125);
+    color:#fff;
+    position:relative;
+    top:-60px;
+    transform:scale(0.8);
+}
+
+.months{
+    display:flex;
+    background-color:#54D2D6;
+    justify-content:space-between;
+    text-align:center;
+    padding:20px 0;
+    width:100%;
+    background:linear-gradient(#3f5efb,#94bbe9);
+}
+
+.weeks{
+    background-color:rgb(44, 193, 212);
+    display:flex;
+    padding:5px 0;
+    background:linear-gradient(#22c1c3, #fc466b)
+}
+
+.days{
+    background-color:rgb(222, 201, 233);
+    color:rgb(17, 17, 17);
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.weeks div, .days div{
+    text-align:center;
+    width:14.28%;
+}
+
+.days div{
+    padding:10px 0;
+    margin:10px 0;
+    transition:all 0.3s;
+    font-weight:600px;
+}
+
+.prevMonth, .nextMonth{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    height:50px;
+    width:50px;
+    background:radial-gradient(#706ec1, #603396);
+    border-radius:50%;
+    margin:0 20px;
+    font-size:24px;
+    /* border:1px solid rgb(161, 171, 226); */
+    transition:all 0.4s;
+}
+
+.prevMonth:hover, .nextMonth:hover{
+    background:linear-gradient(#4d43e2, #6cc2d4);
+    cursor:pointer;
+    color:rgb(69, 94, 102);
+    transform:rotate(360deg);
+
+}
+
+.days div:hover{
+    background:radial-gradient(red, blue);
+    cursor:pointer;
+    border-radius:50%;
+    color:#fff;
+}
+
+.prevDate{
+    color:rgb(236, 169, 200);
+    font-weight:900px;
+}
+
+.today{
+    background:linear-gradient(#d3e372, #4374a4);
+    color:rgb(238, 231, 231);
+    border-radius:50%;
+}
+
+.sunday{
+    color:red;
+}
+
+.head{
+    background-color:rgb(206, 221, 179);
+    color:rgb(119, 72, 129);
+    font-size:1.43em;
+    text-align:center;
+    padding:10px 0;
+    border:3px solid rgb(106, 171, 173);
+    background:linear-gradient(-45deg, #eeaeca, #fcb045);
+}
+.feed{
+    text-align:center;
+    position:relative;
+    bottom:200px;
+    margin:0px 10px;
+}
+.feed label{
+    color:rgb(223, 205, 49);
+    margin:0px 5px;
+}
+.feed input{
+    width:20%;
+    padding:5px;
+    margin:2px;
+    border:2px solid rgb(187, 223, 195);
+    outline:none;
+    border-radius:5px;
+}
+
+div.submit input{
+    width:100px;
+    margin:5px;
+    text-transform:capitalize;
+    color:#a49;
+}
+input[type='submit']:hover {
+    background:linear-gradient(to bottom right, #A7B4C6, rgb(208, 247, 123));
+    color:#fff;
+}
+
+.clock{
+    background:#fff;
+    position:absolute;
+    top:130px;
+    transform:translateX(585px);
+    margin:2px auto;
+    font-size:1.3em;
+    padding:8px;
+    text-align:center;
+    border:2px solid #a48;
+    border-radius:10px;
+    background:linear-gradient(-45deg, #3c5881, rgb(159, 212, 42));
+    color:rgb(243, 244, 247);
+    
+}
+
